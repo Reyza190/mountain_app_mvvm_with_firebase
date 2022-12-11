@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Mountain</string>
+    <string name="greeting">Hello,</string>
+    <string name="find_indonesia">Find Indonesia</string>
+    <string name="mountain">Mountain</string>
+    <string name="view">View</string>
+    <string name="name_mountain">Bromo Mountain</string>
+    <string name="location_name">Probolinggo</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="email">Email</string>
+    <string name="image_logo">image logo</string>
+    <string name="password">password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="name">Name</string>
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="mountain_name">Mountain Name</string>
+    <string name="mountain_image">Mountain Image</string>
+    <string name="location">Location</string>
+    <string name="height">Height</string>
+    <string name="description">Description</string>
+    <string name="masukkan_nama_gunung">Masukkan nama gunung</string>
+    <string name="masukkan_lokasi_gunung">Masukkan lokasi gunung</string>
+    <string name="mdpl">Mdpl</string>
+    <string name="tambah_cover">Tambah Cover</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

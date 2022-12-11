@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "601383438423",
+    "project_id": "monten-29aa6",
+    "storage_bucket": "monten-29aa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601383438423:android:d1ae866c324debd6fdfb12",
+        "android_client_info": {
+          "package_name": "com.example.mountain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601383438423-iaj4a4n700vk6gm87jpddis8o1gf82p4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mountain",
+            "certificate_hash": "501dc9bcad9af8161a64c550c2085cdf6a8409fc"
+          }
+        },
+        {
+          "client_id": "601383438423-ck5sp779eg5ftaehj2tm3muh6ag30ku1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChVFP2aITkKIVCuZGT8dEhv3FlMSdCU8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601383438423-ck5sp779eg5ftaehj2tm3muh6ag30ku1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

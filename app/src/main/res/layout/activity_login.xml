@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    android:background="@color/white"
+    tools:context=".ui.LoginActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_nobg"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/image_logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_to_your_account"
+        android:fontFamily="@font/poppinsemibold"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        />
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:hint="@string/email"
+        android:elevation="3dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:fontFamily="@font/poppinsregular"
+        android:background="@drawable/background_edtlogin"
+        android:textColorHint="@color/hinttext"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/password"
+        android:elevation="3dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="3dp"
+        android:fontFamily="@font/poppinsregular"
+        android:paddingEnd="0dp"
+        android:layout_marginEnd="3dp"
+        android:paddingStart="15dp"
+        android:background="@drawable/background_edtlogin"
+        android:textColorHint="@color/hinttext"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:inputType="textPassword" />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:text="@string/sign_in"
+        android:fontFamily="@font/poppinsregular"
+        android:background="@drawable/background_btnlogin"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/don_t_have_an_account"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/hinttext"
+            />
+        <TextView
+            android:id="@+id/tvSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textStyle="bold"
+            android:textColor="@color/loginbtn"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

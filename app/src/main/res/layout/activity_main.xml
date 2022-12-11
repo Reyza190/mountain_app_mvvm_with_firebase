@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_primary"
+    tools:context=".ui.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior">
+        
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:fabCradleMargin="7dp"
+            app:fabCradleVerticalOffset="4dp"
+            app:backgroundTint="@color/endgradient"
+            android:layout_gravity="bottom"
+            android:background="@color/endgradient">
+        
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/endgradient"
+                android:layout_marginEnd="16dp"
+                app:itemIconSize="40dp"
+                app:backgroundTint="@color/transparent"
+                app:itemIconTint="@drawable/selected_item"
+                app:menu="@menu/bottom_nav_menu"
+                />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxImageSize="30dp"
+            app:fabCustomSize="75dp"
+            app:backgroundTint="@color/startgradient"
+            android:src="@drawable/ic_baseline_add"
+            app:layout_anchor="@id/bottomAppBar"
+            />
+        
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

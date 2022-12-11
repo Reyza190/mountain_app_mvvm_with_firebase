@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingStart="30dp"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:paddingEnd="30dp"
+    tools:context=".ui.RegisterActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_blue"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_nobg"
+        android:contentDescription="@string/image_logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_your_account"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppinsemibold"
+        android:textSize="23sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+
+        <EditText
+            android:id="@+id/edtFirstName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:hint="@string/firstname"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsregular"
+            android:elevation="3dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:background="@drawable/background_edtlogin"
+            android:textColorHint="@color/hinttext"
+            android:autofillHints=""
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/edtLastName"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:hint="@string/lastname"
+            android:elevation="3dp"
+            android:fontFamily="@font/poppinsregular"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            android:paddingEnd="0dp"
+            android:background="@drawable/background_edtlogin"
+            android:textColorHint="@color/hinttext"
+            android:autofillHints=""
+            android:inputType="text" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:elevation="3dp"
+        app:boxBackgroundColor="@color/white"
+        android:hint="@string/email"
+        android:background="@drawable/background_edtlogin"
+        android:textColorHint="@color/hinttext"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        app:passwordToggleTint="@color/loginbtn"
+        >
+        <EditText
+            android:id="@+id/edtEmailSignup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppinsregular"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:elevation="3dp"
+        app:boxBackgroundColor="@color/white"
+        android:hint="@string/password"
+        android:background="@drawable/background_edtlogin"
+        android:textColorHint="@color/hinttext"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/loginbtn"
+        >
+        <EditText
+            android:id="@+id/edtPasswordSignup"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppinsregular"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/sign_up"
+        android:background="@drawable/background_btnlogin"
+        />
+
+</LinearLayout>

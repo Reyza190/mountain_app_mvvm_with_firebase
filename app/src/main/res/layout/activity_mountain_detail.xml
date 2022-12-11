@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.MountainDetailActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/roundedimage"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/rivMountainDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:riv_corner_radius_bottom_right="60dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bromo_mountain"
+                />
+            <TextView
+                android:id="@+id/tvMountainNameDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bromo Mountain"
+                android:fontFamily="@font/poppinsemibold"
+                android:layout_marginBottom="40dp"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                />
+
+            <ImageView
+                android:id="@+id/ivLocationDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMountainNameDetail"
+                android:src="@drawable/ic_location"
+                android:layout_marginTop="-40dp"
+                android:layout_alignStart="@+id/tvMountainNameDetail"
+                />
+
+
+            <TextView
+                android:id="@+id/tvLocationDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proboilnggo"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_below="@id/tvMountainNameDetail"
+                android:layout_marginTop="-40dp"
+                android:layout_toRightOf="@id/ivLocationDetail"
+                android:layout_marginStart="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                />
+
+            
+
+            
+            
+        </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/textView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/mountainsheight"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMountainHeightDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2180 Mdpl"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/poppinsregular"
+        android:paddingTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/relative" />
+
+    <ImageView
+        android:id="@+id/ivDownload"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/downloading"
+        android:layout_marginTop="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/relative" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/description"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvDesriptionDetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/black"
+        android:paddingStart="20dp"
+        android:justificationMode="inter_word"
+        android:fontFamily="@font/poppinsregular"
+        android:paddingEnd="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:targetApi="o" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
